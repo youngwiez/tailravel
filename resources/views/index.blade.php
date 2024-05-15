@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,20 +16,20 @@
                 <div class="container mx-auto flex justify-between items-center">
                     <a href="/" class="pl-8 py-3 text-3xl font-bold text-white"><span class="text-blue-300">Raka</span> Wisesa</a>
                     <ul class="hidden sm:flex items-center pr-10 text-base font-semibold cursor-pointer">
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="/">Home</a></li>
+                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#home">Home</a></li>
                         <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#about">About Me</a></li>
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="/">Projects</a></li>
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="/">Contacts</a></li>
+                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#projects">Projects</a></li>
+                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#contacts">Contacts</a></li>
                     </ul>
                     <button class="block sm:hidden py-3 px-4 mx-2 focus:outline-none group">
                         <i class="fa-solid fa-bars text-white"></i>
                         <div class="fixed top-0 -right-full h-screen w-6/12 bg-slate-900/95 border-none opacity-0 rounded-xl shadow-xl
                         group-focus:right-0 group-focus:opacity-100 transition-all duration-500">
                             <ul class="flex flex-col items-center w-full text-base font-semibold cursor-pointer pt-10">
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="/">Home</a></li>
+                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#home">Home</a></li>
                                 <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#about">About Me</a></li>
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="/">Projects</a></li>
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="/">Contacts</a></li>
+                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#projects">Projects</a></li>
+                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#contacts">Contacts</a></li>
                             </ul>
                         </div>
                     </button>
@@ -40,7 +40,7 @@
                 <div class="w-full lg:w-1/2 self-center flex flex-col justify-center">
                     <div class="pl-10 pr-10">
                         <h1 class="text-4xl font-bold lg:text-6xl text-white">Hello, I'm <br><span class="text-blue-300">Raka</span></h1>
-                        <p class="mt-5 leading-relaxed text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="mt-5 leading-relaxed text-white">Full-stack Developer | Network Engineer</p>
                     </div>
                     <div class="pl-10 mt-10">
                         <a href="#about" class="bg-transparent border-2 border-blue-300 hover:bg-blue-300 hover:shadow-lg duration-300 px-8 py-3 text-white font-semibold rounded-xl">Read More</a>
