@@ -8,7 +8,7 @@
     <title>Raka's Portfolio</title>
 </head>
 <body>
-    <!-- bg-gradient-to-br from-white to-sky-300 -->
+    <!-- home section -->
     <section id="home" class="bg-gradient-to-b from-slate-900 via-slate-900 to-blue-700">
         <div class="min-h-screen flex flex-col justify-center relative">
             <!-- navbar -->
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-
+    <!-- about section -->
     <section id="about" class="pt-32 pb-32 bg-sky-100">
         <div class="container">
             <div class="flex flex-wrap">
@@ -99,6 +99,7 @@
         </div>
     </section>
 
+    <!-- projects section -->
     <section id="projects" class="pt-20 bg-gradient-to-b from-slate-700 to-slate-900">
         <div class="container">
             <div class="flex flex-wrap">
@@ -178,6 +179,11 @@
                 <h3 class="font-semibold text-lg text-white text-center">and the others...</h3>
             </div>
         </div>
+    </section>
+
+    <!-- contacts section -->
+    <section id="contacts" class="pt-20 pb-32 bg-slate-900">
+
     </section>
 </body>
 </html>
