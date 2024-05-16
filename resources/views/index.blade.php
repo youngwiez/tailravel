@@ -39,11 +39,12 @@
             <div class="container mx-auto flex flex-wrap items-center mt-20 lg:mt-0">
                 <div class="w-full lg:w-1/2 self-center flex flex-col justify-center">
                     <div class="pl-10 pr-10">
-                        <h1 class="text-4xl font-bold lg:text-6xl text-white">Hello, I'm <br><span class="text-blue-300">Raka</span></h1>
-                        <p class="mt-5 leading-relaxed text-white">Full-stack Developer | Network Engineer</p>
+                        <h1 class="text-4xl font-bold lg:text-6xl text-white">Hello, I am <br><span class="text-blue-300">Raka</span></h1>
+                        <p class="mt-5 leading-relaxed text-white text-md lg:text-lg">Junior Full-stack Developer | Junior Network Engineer</p>
                     </div>
                     <div class="pl-10 mt-10">
-                        <a href="#about" class="bg-transparent border-2 border-blue-300 hover:bg-blue-300 hover:shadow-lg duration-300 px-8 py-3 text-white font-semibold rounded-xl">Read More</a>
+                        <a href="#about" class="bg-transparent border-2 border-blue-300 
+                        hover:bg-blue-300 hover:shadow-lg duration-300 px-8 py-3 text-white font-semibold rounded-xl">Read More</a>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 self-center relative mt-0 lg:mt-0">
@@ -58,7 +59,7 @@
                                     transform="translate(100 100) scale(1.2)"/>
                                 </svg>
                             </span>
-                            <img src="{{asset('img/pp.png')}}" alt="Raka Wisesa" class="max-w-sm lg:max-w-sm relative z-10">
+                            <img src="{{asset('img/pp.png')}}" alt="Raka Wisesa" class="max-w-sm lg:max-w-md relative z-10">
                         </div>
                     </div>
                 </div>
@@ -67,7 +68,7 @@
     </section>
 
 
-    <section id="about" class="pt-36 pb-32 bg-sky-50">
+    <section id="about" class="pt-32 pb-32 bg-sky-100">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -94,6 +95,87 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="pt-20 bg-gradient-to-b from-slate-700 to-slate-900">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 items-center pb-10">
+                    <h3 class="font-semibold text-lg text-white text-center">My Projects</h3>
+                    <h1 class="font-bold text-3xl lg:text-4xl text-blue-300 text-center">Here are my some previous projects</h1>
+                </div>
+            </div>
+            <div class="pl-10 pr-10 pb-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
+                    <div class="relative flex flex-col bg-sky-100 bg-clip-border rounded-xl group">
+                        <div class="relative mx-4 mt-4 overflow-hidden rounded-xl w-90 grayscale group-hover:grayscale-0 duration-300">
+                            <img src="{{asset('img/project_1.png')}}" alt="library_inventory"/>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-2xl font-semibold text-slate-900">School Library Inventory</h3>
+                            <div class="flex justify-center p-4 gap-6">
+                                <i class="fa-brands fa-php text-slate-900 text-4xl group-hover:text-indigo-500 duration-300"></i>
+                                <i class="fa-brands fa-bootstrap text-slate-900 text-4xl group-hover:text-purple-800 duration-300"></i>
+                            </div>
+                            <div class="p-4">
+                                <a href="https://github.com/youngwiez/perpustakaan" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
+                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    <i class="fa-brands fa-github space-x-2"></i>
+                                    Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col bg-sky-100 bg-clip-border rounded-xl group">
+                        <div class="relative mx-4 mt-4 overflow-hidden rounded-xl w-90 grayscale group-hover:grayscale-0 duration-300">
+                            <img src="{{asset('img/project_2.png')}}" alt="my_portfolio_website"/>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-2xl font-semibold text-slate-900">My Portfolio Website</h3>
+                            <div class="flex justify-center items-center p-2 pt-4 gap-5">
+                                <i class="fa-brands fa-laravel text-slate-900 text-4xl group-hover:text-orange-600 duration-300"></i>
+                                <svg class="w-12 h-12 fill-current group-hover:text-sky-400 duration-300" fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822
+                                    3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166
+                                    1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976
+                                    1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1
+                                    1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"/>
+                                </svg>
+                            </div>
+                            <div class="p-4">
+                                <a href="https://github.com/youngwiez/portfolio" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
+                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    <i class="fa-brands fa-github space-x-2"></i>
+                                    Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col bg-sky-100 bg-clip-border rounded-xl group">
+                        <div class="relative mx-4 mt-4 overflow-hidden rounded-xl w-90 grayscale group-hover:grayscale-0 duration-300">
+                            <img src="{{asset('img/project_3.png')}}" alt="students_db_website"/>
+                        </div>
+                        <div class="p-4 text-center">
+                            <h3 class="text-2xl font-semibold text-slate-900">Students Database Website</h3>
+                            <div class="flex justify-center p-4 gap-6">
+                                <i class="fa-brands fa-laravel text-slate-900 text-4xl group-hover:text-orange-600 duration-300"></i>
+                                <i class="fa-brands fa-bootstrap text-slate-900 text-4xl group-hover:text-purple-800 duration-300"></i>
+                            </div>
+                            <div class="p-4">
+                                <a href="https://github.com/youngwiez/lspp1" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
+                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    <i class="fa-brands fa-github space-x-2"></i>
+                                    Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 items-center pb-10">
+                <h3 class="font-semibold text-lg text-white text-center">and the others...</h3>
             </div>
         </div>
     </section>
