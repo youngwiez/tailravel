@@ -5,6 +5,7 @@ export default {
     "./resources/**/*.js",
     "./resources/**/*.vue",
   ],
+  // lightMode: 'class',
   theme: {
     container: {
       center: true,

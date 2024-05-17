@@ -9,17 +9,30 @@
 </head>
 <body>
     <!-- home section -->
-    <section id="home" class="bg-gradient-to-b from-slate-900 via-slate-900 to-blue-700">
+    <section id="home" class="bg-gradient-to-b from-slate-900 via-slate-900 to-blue-700 light:bg-light">
         <div class="min-h-screen flex flex-col justify-center relative">
             <!-- navbar -->
             <nav class="fixed top-0 left-0 w-full z-50 bg-slate-900 shadow-xl">
                 <div class="container mx-auto flex justify-between items-center">
-                    <a href="/" class="pl-8 py-3 text-3xl font-bold text-white"><span class="text-blue-300">Raka</span> Wisesa</a>
+                    <a href="/" class="pl-8 py-3 text-xl md:text-3xl font-bold text-white"><span class="text-blue-300">Raka</span> Wisesa</a>
                     <ul class="hidden sm:flex items-center pr-10 text-base font-semibold cursor-pointer">
                         <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#home">Home</a></li>
                         <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#about">About Me</a></li>
                         <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#projects">Projects</a></li>
                         <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#contacts">Contacts</a></li>
+                        <!-- <li class="p-4 text-white hover:text-yellow-200 duration-300 ease-in-out"><i class="fa-regular fa-sun text-xl"></i></li> -->
+                        <!-- <li class="p-4 flex items-center">
+                            <div class="flex">
+                                <span class="mr-2 text-sm text-white">dark</span>
+                                <input type="checkbox" class="hidden" id="light-toggle"/>
+                                <label for="light-toggle">
+                                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-sky-100 p-1">
+                                        <div class="toggle-circle h-4 w-4 rounded-full bg-slate-900 transition duration-300 ease-in-out"></div>
+                                    </div>
+                                </label>
+                                <span class="ml-2 text-sm text-white">light</span>
+                            </div>
+                        </li> -->
                     </ul>
                     <button class="block sm:hidden py-3 px-4 mx-2 focus:outline-none group">
                         <i class="fa-solid fa-bars text-white"></i>
@@ -44,7 +57,7 @@
                     </div>
                     <div class="pl-10 mt-10">
                         <a href="#about" class="bg-transparent border-2 border-blue-300 
-                        hover:bg-blue-300 hover:shadow-lg duration-300 px-8 py-3 text-white font-semibold rounded-xl">Read More</a>
+                        hover:bg-blue-300 hover:text-slate-900 hover:shadow-lg duration-300 px-8 py-3 text-white font-semibold rounded-xl">Read More</a>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 self-center relative mt-0 lg:mt-0">
@@ -70,13 +83,13 @@
     <!-- about section -->
     <section id="about" class="pt-32 pb-32 bg-sky-100">
         <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <div class="pl-10 pr-10">
+            <div class="flex items-center flex-wrap">
+                <div class="w-full px-4 lg:w-1/2">
+                    <div class="flex pl-10 pr-10">
                         <img src="{{asset('img/ngetik.JPG')}}" alt="Typing" class="rounded-xl shadow-2xl">
                     </div>
                 </div>
-                <div class="w-full px-4 lg:w-1/2">
+                <div class="w-full px-4 sm:pt-10 lg:pt-0 lg:w-1/2">
                     <div class="pl-10 pr-10">
                         <h3 class="font-semibold text-lg text-slate-900">About Me</h3>
                         <h1 class="text-3xl font-bold lg:text-4xl text-blue-700">a.k.a My Intro</h1>
@@ -91,7 +104,7 @@
                         </p>
                         <a href="https://linkedin.com/in/raka-wisesa" target="blank" class="flex items-center font-bold text-xl space-x-2">
                             <i class="fa-brands fa-linkedin text-blue-700 text-4xl"></i>
-                            <span>Muhammad Raka Andra Wisesa</span>
+                            <span>linkedin.com/in/raka-wisesa</span>
                         </a>
                     </div>
                 </div>
@@ -100,7 +113,7 @@
     </section>
 
     <!-- projects section -->
-    <section id="projects" class="pt-20 bg-gradient-to-b from-slate-700 to-slate-900">
+    <section id="projects" class="pt-20 bg-slate-900">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 items-center pb-10">
@@ -122,7 +135,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/perpustakaan" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -147,7 +160,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/portfolio" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -166,7 +179,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/lspp1" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-lg duration-300 px-20 py-3 text-slate-900 font-semibold rounded-xl w-full">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -175,15 +188,55 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full px-4 items-center pb-10">
-                <h3 class="font-semibold text-lg text-white text-center">and the others...</h3>
+            <div class="w-full px-4 pb-10">
+                <div class="p-4 text-center">
+                    <a href="https://github.com/youngwiez/" target="blank" class="bg-transparent border-2 border-blue-300 hover:bg-blue-300 
+                        hover:text-slate-900 hover:shadow-lg duration-300 px-2 py-3 lg:px-8 text-white font-semibold rounded-xl">
+                        <i class="fa-brands fa-github space-x-2 text-xl"></i>
+                        <span>Find more at github.com/youngwiez</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- contacts section -->
-    <section id="contacts" class="pt-20 pb-32 bg-slate-900">
-
+    <section id="contacts" class="pt-20 pb-20 bg-slate-700">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="flex items-center px-4 sm:w-1/2">
+                    <div class="pl-10 pr-10 w-full">
+                        <h1 class="text-3xl md:text-4xl lg:text-6xl sm:text-right font-bold text-sky-100">Contact Me</h1>
+                    </div>
+                </div>
+                <div class="flex items-center px-4 sm:w-1/2">
+                    <div class="pl-10 pr-10 w-full">
+                        <a href="https://wa.me/+6285877160617" target="blank" 
+                        class="text-white font-semibold text-xl">
+                            <i class="fa-brands fa-whatsapp space-x-2"></i>
+                            (+62)85877160617
+                        </a>
+                        <br>
+                        <a href="https://instagram.com/rakandrw" target="blank" 
+                        class="text-white font-semibold text-xl">
+                            <i class="fa-brands fa-instagram space-x-2"></i>
+                            rakandrw
+                        </a>
+                        <br>
+                        <a href="mailto:rakaawisesa@gmail.com" target="blank" 
+                        class="text-white font-semibold text-xl">
+                            <i class="fa-regular fa-envelope space-x-2"></i>
+                            rakaawisesa@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- <a href="#home" class="fixed bottom-4 right-4 z-[9999] h-14 w-14 rounded-full 
+    bg-sky-100/70 p-4 hover:bg-sky-100 hover:shadow-xl duration-300 flex justify-center">
+        <i class="fa-solid fa-arrow-up text-slate-900/70 hover:text-slate-900 duration-300 text-2xl"></i>
+    </a> -->
+    <script src="{{asset('script/script.js')}}"></script>
 </body>
 </html>
