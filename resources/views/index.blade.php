@@ -8,46 +8,34 @@
     <title>Raka's Portfolio</title>
 </head>
 <body>
-    <!-- home section -->
-    <section id="home" class="bg-gradient-to-b from-slate-900 via-slate-900 to-blue-700 light:bg-light">
-        <div class="min-h-screen flex flex-col justify-center relative">
-            <!-- navbar -->
-            <nav class="fixed top-0 left-0 w-full z-50 bg-slate-900 shadow-xl">
-                <div class="container mx-auto flex justify-between items-center">
-                    <a href="/" class="pl-8 py-3 text-xl md:text-3xl font-bold text-white"><span class="text-blue-300">Raka</span> Wisesa</a>
-                    <ul class="hidden sm:flex items-center pr-10 text-base font-semibold cursor-pointer">
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#home">Home</a></li>
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#about">About Me</a></li>
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#projects">Projects</a></li>
-                        <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#contacts">Contacts</a></li>
-                        <!-- <li class="p-4 text-white hover:text-yellow-200 duration-300 ease-in-out"><i class="fa-regular fa-sun text-xl"></i></li> -->
-                        <!-- <li class="p-4 flex items-center">
-                            <div class="flex">
-                                <span class="mr-2 text-sm text-white">dark</span>
-                                <input type="checkbox" class="hidden" id="light-toggle"/>
-                                <label for="light-toggle">
-                                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-sky-100 p-1">
-                                        <div class="toggle-circle h-4 w-4 rounded-full bg-slate-900 transition duration-300 ease-in-out"></div>
-                                    </div>
-                                </label>
-                                <span class="ml-2 text-sm text-white">light</span>
-                            </div>
-                        </li> -->
+    <!-- navbar -->
+    <header class="absolute top-0 left-0 w-full z-50 bg-transparent">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="pl-8 py-3 text-xl md:text-3xl font-bold text-white"><span class="text-blue-300">Raka</span> Wisesa</a>
+            <ul class="hidden sm:flex items-center pr-10 text-base font-semibold cursor-pointer">
+                <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#home">Home</a></li>
+                <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#about">About Me</a></li>
+                <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#projects">Projects</a></li>
+                <li class="p-4 text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out"><a href="#contacts">Contacts</a></li>
+            </ul>
+            <button class="block sm:hidden py-3 px-4 mx-2 focus:outline-none group">
+                <i class="fa-solid fa-bars text-white"></i>
+                <div class="fixed top-0 -right-full h-screen w-6/12 bg-slate-900/95 border-none opacity-0 rounded-xl shadow-xl
+                group-focus:right-0 group-focus:opacity-100 transition-all duration-500">
+                    <ul class="flex flex-col items-center w-full text-base font-semibold cursor-pointer pt-10">
+                        <li class="text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out mb-2"><a href="#home">Home</a></li>
+                        <li class="text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out mb-2"><a href="#about">About Me</a></li>
+                        <li class="text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out mb-2"><a href="#projects">Projects</a></li>
+                        <li class="text-white border-b-2 border-blue-300 border-opacity-0 hover:border-opacity-100 duration-300 ease-in-out mb-2"><a href="#contacts">Contacts</a></li>
                     </ul>
-                    <button class="block sm:hidden py-3 px-4 mx-2 focus:outline-none group">
-                        <i class="fa-solid fa-bars text-white"></i>
-                        <div class="fixed top-0 -right-full h-screen w-6/12 bg-slate-900/95 border-none opacity-0 rounded-xl shadow-xl
-                        group-focus:right-0 group-focus:opacity-100 transition-all duration-500">
-                            <ul class="flex flex-col items-center w-full text-base font-semibold cursor-pointer pt-10">
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#home">Home</a></li>
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#about">About Me</a></li>
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#projects">Projects</a></li>
-                                <li class="text-white hover:border-2 hover:border-blue-300 rounded-xl py-2 px-4 duration-300 w-full"><a href="#contacts">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </button>
                 </div>
-            </nav>
+            </button>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section id="home" class="bg-gradient-to-b from-blue-800 via-slate-900 to-slate-900 light:bg-light">
+        <div class="min-h-screen flex flex-col justify-center relative">
             <!-- content -->
             <div class="container mx-auto flex flex-wrap items-center mt-20 lg:mt-0">
                 <div class="w-full lg:w-1/2 self-center flex flex-col justify-center">
@@ -81,7 +69,7 @@
     </section>
 
     <!-- about section -->
-    <section id="about" class="pt-32 pb-32 bg-sky-100">
+    <section id="about" class="pt-32 pb-32 bg-slate-900">
         <div class="container">
             <div class="flex items-center flex-wrap">
                 <div class="w-full px-4 lg:w-1/2">
@@ -89,22 +77,23 @@
                         <img src="{{asset('img/ngetik.JPG')}}" alt="Typing" class="rounded-xl shadow-2xl">
                     </div>
                 </div>
-                <div class="w-full px-4 sm:pt-10 lg:pt-0 lg:w-1/2">
+                <div class="w-full px-4 sm:pt-10 md:pt-0 lg:w-1/2">
                     <div class="pl-10 pr-10">
-                        <h3 class="font-semibold text-lg text-slate-900">About Me</h3>
-                        <h1 class="text-3xl font-bold lg:text-4xl text-blue-700">a.k.a My Intro</h1>
-                        <p class="mt-5 leading-relaxed text-justify">Hello, I am Muhammad Raka Andra Wisesa,
+                        <h3 class="font-semibold text-lg text-sky-100">About Me</h3>
+                        <h1 class="text-3xl font-bold lg:text-4xl text-blue-300">a.k.a My Intro</h1>
+                        <p class="mt-5 leading-relaxed text-justify text-white">Hello, I am Muhammad Raka Andra Wisesa,
                             one of students majoring in Information System, Network, and Application (SIJA) 
                             at SMK Negeri 2 Depok, Sleman, Yogyakarta.
                         </p>
-                        <p class="mt-5 mb-10 leading-relaxed text-justify">
+                        <p class="mt-5 mb-5 leading-relaxed text-justify text-white">
                             I have some experience in programming such as creating inventory system applications and simple websites, 
                             and also in the network field I have experience in creating cloud servers and local servers, 
                             as well as creating and managing network systems.
                         </p>
-                        <a href="https://linkedin.com/in/raka-wisesa" target="blank" class="flex items-center font-bold text-xl space-x-2">
-                            <i class="fa-brands fa-linkedin text-blue-700 text-4xl"></i>
-                            <span>linkedin.com/in/raka-wisesa</span>
+                        <a href="https://linkedin.com/in/raka-wisesa" target="blank" class="flex items-center font-bold md:text-xl space-x-2 
+                        text-white border-2 border-transparent rounded-xl">
+                            <i class="fa-brands fa-linkedin text-blue-300 text-4xl"></i>
+                            <span>Muhammad Raka Andra Wisesa</span>
                         </a>
                     </div>
                 </div>
@@ -121,7 +110,7 @@
                     <h1 class="font-bold text-3xl lg:text-4xl text-blue-300 text-center">Here are my some previous projects</h1>
                 </div>
             </div>
-            <div class="pl-10 pr-10 pb-10">
+            <div class="pl-10 pr-10 pb-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
                     <div class="relative flex flex-col bg-sky-100 bg-clip-border rounded-xl group">
                         <div class="relative mx-4 mt-4 overflow-hidden rounded-xl w-90 grayscale group-hover:grayscale-0 duration-300">
@@ -135,7 +124,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/perpustakaan" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-2 md:px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -160,7 +149,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/portfolio" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-2 md:px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -179,7 +168,7 @@
                             </div>
                             <div class="p-4">
                                 <a href="https://github.com/youngwiez/lspp1" target="blank" class="bg-transparent border-2 border-slate-700 hover:bg-slate-700 
-                                    hover:text-sky-100 hover:shadow-xl duration-300 px-8 py-3 text-slate-900 font-semibold rounded-xl">
+                                    hover:text-sky-100 hover:shadow-xl duration-300 px-2 md:px-8 py-3 text-slate-900 font-semibold rounded-xl">
                                     <i class="fa-brands fa-github space-x-2"></i>
                                     Repository
                                 </a>
@@ -190,18 +179,25 @@
             </div>
             <div class="w-full px-4 pb-10">
                 <div class="p-4 text-center">
+                    <h3 class="font-semibold text-lg text-white pb-5">Find more at</h3>
                     <a href="https://github.com/youngwiez/" target="blank" class="bg-transparent border-2 border-blue-300 hover:bg-blue-300 
-                        hover:text-slate-900 hover:shadow-lg duration-300 px-2 py-3 lg:px-8 text-white font-semibold rounded-xl">
+                        hover:text-slate-900 hover:shadow-lg duration-300 px-2 py-3 md:px-8 text-white font-semibold rounded-xl">
                         <i class="fa-brands fa-github space-x-2 text-xl"></i>
-                        <span>Find more at github.com/youngwiez</span>
+                        <span>github.com/youngwiez</span>
                     </a>
+                    <!-- <a href="https://github.com/youngwiez/" target="blank" class="bg-transparent border-2 border-blue-300 hover:bg-blue-300 
+                        flex items-center justify-center hover:text-slate-900 hover:shadow-lg duration-300 px-3 py-3 md:px-0 text-white font-semibold space-x-2 rounded-xl
+                        max-w-sm mx-auto">
+                        <i class="fa-brands fa-github text-xl"></i>
+                        <span>github.com/youngwiez</span>
+                    </a> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- contacts section -->
-    <section id="contacts" class="pt-20 pb-20 bg-slate-700">
+    <!-- <section id="contacts" class="pt-20 pb-20 bg-slate-700">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="flex items-center px-4 sm:w-1/2">
@@ -232,7 +228,63 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="contacts" class="pt-24 pb-12 bg-slate-800">
+        <div class="container">
+            <div class="flex flex-wrap text-white">
+                <div class="w-full px-4 mb-5 md:mb-0 font-medium md:w-1/3">
+                    <h2 class="font-bold text-3xl md:text-4xl"><span class="text-blue-300">Raka</span> Wisesa</h2>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl mb-5">Contact Me</h3>
+                    <ul>
+                        <li>
+                            <a href="#home" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">+6285877160617</a>
+                        </li>
+                        <li>
+                            <a href="#about" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">Muhammad Raka Andra Wisesa</a>
+                        </li>
+                        <li>
+                            <a href="#projects" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">rakaawisesa@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/youngwiez" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">youngwiez</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl mb-5">Contact Me</h3>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/+6285877160617" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">+6285877160617</a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/raka-wisesa" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">Muhammad Raka Andra Wisesa</a>
+                        </li>
+                        <li>
+                            <a href="mailto:rakaawisesa@gmail.com" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">rakaawisesa@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/youngwiez" target="blank" class="inline-block text-base hover:text-blue-300 duration-300 ease-in-out mb-3">youngwiez</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- footer section -->
+    <section id="footer" class="pt-10 pb-10 bg-slate-800">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 items-center">
+                    <h3 class="sm:text-sm md:text-md text-white text-center">© 2024 | Made by Love from Muhammad Raka Andra Wisesa</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- <a href="#home" class="fixed bottom-4 right-4 z-[9999] h-14 w-14 rounded-full 
     bg-sky-100/70 p-4 hover:bg-sky-100 hover:shadow-xl duration-300 flex justify-center">
         <i class="fa-solid fa-arrow-up text-slate-900/70 hover:text-slate-900 duration-300 text-2xl"></i>

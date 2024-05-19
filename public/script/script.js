@@ -1,10 +1,10 @@
-// const lightToggle = document.querySelector('#light-toggle')
-// const html = document.querySelector('html')
+window.onscroll = function () {
+    const header = document.querySelector('header')
+    const fixedNav = header.offsetTop
 
-// lightToggle.addEventListener('click', function() {
-//     if (lightToggle.checked) {
-//         html.classList.add('light')
-//     } else {
-//         html.classList.remove('light')
-//     }
-// })
+    if (window.pageYOffset > fixedNav) {
+        header.classList.add('navbar-fixed')
+    } else {
+        header.classList.remove('navbar-fixed')
+    }
+}
